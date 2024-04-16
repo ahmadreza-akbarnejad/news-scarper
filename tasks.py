@@ -14,7 +14,7 @@ import shutil
 from selenium.webdriver.common.by import By
 
 
-class NewsScraper:
+class LATimesScraper:
     break_flag = False
 
     def __init__(self, url, search_phrase, category, number_of_months):
@@ -240,5 +240,5 @@ def Scraper():
     library.get_input_work_item()
     variables = library.get_work_item_variables()
 
-    s = NewsScraper(**variables)
+    s = LATimesScraper(**variables)  # LATimesScraper("https://www.latimes.com/", "price", "Business", 0)
     s.run()
