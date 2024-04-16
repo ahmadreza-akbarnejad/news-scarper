@@ -12,8 +12,6 @@ import logging
 import os
 import shutil
 from selenium.webdriver.common.by import By
-from requests.adapters import HTTPAdapter
-import requests
 
 
 class NewsScraper:
